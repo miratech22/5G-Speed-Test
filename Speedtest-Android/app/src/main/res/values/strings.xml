@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">LibreSpeed Android Template</string>
+    <string name="app_name">Speed Test</string>
     <string name="logo_inapp_link">https://github.com/librespeed/speedtest-android</string>
     <string name="privacy_policy">file:///android_asset/privacy_en.html</string>
 
@@ -23,4 +23,6 @@
     <string name="testFail_retry">Try again</string>
     <string name="privacy_open"><u>Privacy</u></string>
     <string name="privacy_close"><u>Back</u></string>
+
+    <string name="sponsoredBy">Sponsored by </string>
 </resources>

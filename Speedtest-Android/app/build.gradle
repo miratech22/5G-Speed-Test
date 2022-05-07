@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 28
-    buildToolsVersion "29.0.0"
+    compileSdkVersion 31
+    buildToolsVersion "29.0.3"
     defaultConfig {
-        applicationId "your.name.here.speedtest"
+        applicationId 'lte5g.speedtest.internet.wifi'
         minSdkVersion 15
-        targetSdkVersion 28
-        versionCode 9
-        versionName '1.2.3'
+        targetSdkVersion 31
+        versionCode 11
+        versionName '1.0.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

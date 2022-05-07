@@ -31,6 +31,8 @@
                 android:layout_width="@dimen/logo_maxWidth"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/margin_medium"
+                android:id="@+id/logo"
+                android:layout_centerHorizontal="true"
                 android:src="@drawable/logo" />
 
         </RelativeLayout>
@@ -130,6 +132,37 @@
                 android:textSize="@dimen/text"
                 />
 
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/sponsorArea"
+                android:visibility="invisible"
+                android:layout_below="@id/serverList"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_smallSep"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sponsoredBy"
+                    android:id="@+id/sponsoredBy"
+                    android:layout_marginEnd="@dimen/margin_smallSep"
+                    android:layout_marginRight="@dimen/margin_smallSep"
+                    android:textSize="@dimen/sponsorText"
+                    android:textColor="@color/textColor"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SPONSOR NAME/LINK"
+                    android:id="@+id/sponsor"
+                    android:layout_toEndOf="@id/sponsoredBy"
+                    android:layout_toRightOf="@id/sponsoredBy"
+                    android:textSize="@dimen/sponsorText"
+                    android:textColor="@color/textColor"
+                    />
+            </RelativeLayout>
+
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -137,7 +170,7 @@
                 android:text="@string/start"
                 android:id="@+id/start"
                 android:layout_centerHorizontal="true"
-                android:layout_below="@id/serverList"
+                android:layout_below="@id/sponsorArea"
                 android:background="@color/startButton_background"
                 android:textColor="@color/startButton_text"
                 android:textSize="@dimen/startButton_text"
@@ -205,13 +238,13 @@
                 android:gravity="center"
                 android:padding="@dimen/margin_smallSep"
                 >
+
                 <ImageView
+                    android:id="@+id/logo_inapp"
                     android:layout_width="wrap_content"
                     android:layout_height="@dimen/logo_inapp_height"
-                    android:id="@+id/logo_inapp"
                     android:layout_marginBottom="@dimen/margin_smallSep"
-                    android:src="@drawable/logo_inapp"
-                    />
+                    android:src="@drawable/logo" />
 
                 <TextView
                     android:layout_width="match_parent"
